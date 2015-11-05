@@ -9,16 +9,16 @@
 
     {{content-for 'head'}}
 
+    <link rel="stylesheet" href="http://js.arcgis.com/3.13/esri/css/esri.css">
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/map-app.css">
 
     {{content-for 'head-footer'}}
   </head>
   <body>
-    {{content-for 'body'}}
+    {{content-for 'amd'}}
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/map-app.js"></script>
+    {{content-for 'body'}}
 
     {{content-for 'body-footer'}}
   </body>
